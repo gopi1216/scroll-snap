@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scroll-snap</title>
+  <link rel="stylesheet" href="xlib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="xlib/unisys/unisys-style.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main class="h-100">
+    <header class="header d-flex h-auto px-4 bg-white">
+      <div class="row no-gutters align-items-center flex-grow-1">
+        <i class="icon lg hamburger-menu"></i>
+        <h1 class="m-0 ml-3">Scroll Snap - After(Proximity)</h1>
+      </div>
+      <div class="row no-gutters align-items-center justify-content-end flex-grow-1">
+        <div class="icon md help"></div>
+      </div>
+    </header>
+    <section>
+      <div class="page-content h-100">
+        <div class="page-body pt-3">
+          <h2 class="page-title m-0 text-center">Theodore Reynolds</h2>
+          <div class="row no-gutters mt-4 flex-nowrap justify-content-center">
+            <div id="navbar-example" class="scroll-spy-navbar">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#irisInfo">IRIS</a>
+                <a class="nav-link" href="#documentsInfo">Documents</a>
+                <a class="nav-link" href="#biograpicInfo">BioGraphic Info</a>
+                <a class="nav-link" href="#basicInfo">Basic Info</a>
+              </nav>
+            </div>
+            <div class="scroll-spy ml-5 px-5 py-3 ss-mandatory" data-spy="scroll" data-target="#navbar-example"
+                 data-offset="0">
+              <div class="snap-item" id="irisInfo">
+                <h4>IRIS</h4>
+                <img src="styles/iris.svg" alt="Iris Image" class="img-fluid w-100">
+              </div>
+              <div class="snap-item" id="documentsInfo">
+                <h4>Documents Info</h4>
+                <form class="form-outline px-5">
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="firstName">First Name:</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter First name">
+                    </div>
+                    <div class="form-group col">
+                      <label for="lastName">Last Name:</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter Last name">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="userEmail">Email:</label>
+                      <input type="text" class="form-control" id="userEmail" placeholder="Enter User email">
+                    </div>
+                    <div class="form-group col">
+                      <label for="contactNumber">Phone number:</label>
+                      <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact number">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userCountry">Country:</label>
+                      <input type="text" class="form-control" id="userCountry" placeholder="Enter User Country">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userCity">City:</label>
+                      <input type="text" class="form-control" id="userCity" placeholder="Enter User City">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="addressLine1">Address Line1:</label>
+                      <input type="text" class="form-control" id="addressLine1" placeholder="Enter address Line1">
+                    </div>
+                    <div class="form-group col">
+                      <label for="addressLine2">Address Line2:</label>
+                      <input type="text" class="form-control" id="addressLine2" placeholder="Enter address Line2">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userVin">VIN:</label>
+                      <input type="text" class="form-control" id="userVin" placeholder="Enter User VIN">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userZip">Zipcode:</label>
+                      <input type="text" class="form-control" id="userZip" placeholder="Enter User Country">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="snap-item" id="biograpicInfo">
+                <h4>Biographic Info</h4>
+                <div class="row no-gutters px-5">
+                  <img src="styles/biographic-group.svg" alt="biographic Info" class="img-fluid w-auto">
+                </div>
+              </div>
+              <div class="snap-item" id="basicInfo">
+                <h4>Basic Info</h4>
+                <form class="form-outline px-5">
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="firstName">First Name:</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter First name">
+                    </div>
+                    <div class="form-group col">
+                      <label for="lastName">Last Name:</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter Last name">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="userEmail">Email:</label>
+                      <input type="text" class="form-control" id="userEmail" placeholder="Enter User email">
+                    </div>
+                    <div class="form-group col">
+                      <label for="contactNumber">Phone number:</label>
+                      <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact number">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userCountry">Country:</label>
+                      <input type="text" class="form-control" id="userCountry" placeholder="Enter User Country">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userCity">City:</label>
+                      <input type="text" class="form-control" id="userCity" placeholder="Enter User City">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="addressLine1">Address Line1:</label>
+                      <input type="text" class="form-control" id="addressLine1" placeholder="Enter address Line1">
+                    </div>
+                    <div class="form-group col">
+                      <label for="addressLine2">Address Line2:</label>
+                      <input type="text" class="form-control" id="addressLine2" placeholder="Enter address Line2">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userVin">VIN:</label>
+                      <input type="text" class="form-control" id="userVin" placeholder="Enter User VIN">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userZip">Zipcode:</label>
+                      <input type="text" class="form-control" id="userZip" placeholder="Enter User Country">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer d-flex align-items-center justify-content-between px-4 bg-white">
+          <button type="button" class="btn btn-secondary" id="btnCancel">Cancel</button>
+          <button type="button" class="btn btn-primary" id="btnSubmit">Submit</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="xlib/jquery/jquery.min.js"></script>
+  <script src="xlib/js/bootstrap.bundle.min.js"></script>
+  <script src="xlib/unisys/unisys-utils.min.js"></script>
+  <script>
+    $('[data-spy="scroll"]').scrollspy({ target: '#navbar-example' })
+  </script>
+</body>
+</html>

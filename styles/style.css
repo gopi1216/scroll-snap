@@ -1,0 +1,21 @@
+:root{--primary: #1f73e0;--primary-text: #212121;--secondary-text: #4d4d4d;--ternary-text: #666;--bg: #f1f6f9}
+html{scroll-behavior: smooth}
+body{height: 100vh;color: var(--primary-text);background-color: var(--bg)}
+main{max-height: 100%;display: grid;grid-template: minmax(4.25rem,5rem) minmax(84vh,1fr)/1fr}
+.page-footer{box-shadow: -3px -2px 13px rgba(54,54,54,.13),0 -1px 0 rgba(30,116,170,.3),0 1px 0 rgba(30,116,170,.3)}
+.icon::before{background-color: var(--ternary-text)}
+.hamburger-menu::before{background-color: var(--primary)}
+.btn{height: 3.25rem;font-size: 1.375rem}
+.btn.btn-primary,.btn.btn-primary:not(:disabled):active{color: var(--white)}
+.h1,h1{font-size: 1.375rem;font-weight: 600}
+/*! Page styles ================ */
+.page-content{display: grid;grid-template-rows: minmax(80vh,1fr) minmax(3.5rem,4rem)}
+.page-body{display: grid;grid-auto-rows: auto minmax(70vh,1fr);padding-bottom: 2px}
+.scroll-spy { max-width: 80rem; width: 100%; overflow-y: scroll; overflow-x: hidden; position: relative; background-color: #fff; border: 1px solid rgba(151, 151, 151, .3); border-radius: 0.25rem; }
+.scroll-spy-navbar{min-width: 17.25rem;box-shadow: 1px 0 0 #e0e0e0}
+.nav-pills .nav-link{color: var(--primary-text);font-weight: 600}
+.nav-pills .nav-link.active{background-color: #d5e3f6;color: var(--primary-text);border-radius: 0;border-inline-end: 0.25rem solid var(--primary);transition: all .2s linear}
+.snap-item{scroll-snap-align: start;padding-bottom: 3rem}
+.snap-item h4 { position: sticky; top: -1rem; padding: 0.75rem 1.25rem; background-color: #fff; box-shadow: 0 1px 8px #ccc; z-index: 99; }
+.ss-mandatory{ scroll-snap-type: y mandatory; }
+.ss-proximity{ scroll-snap-type: y proximity; }
