@@ -15,7 +15,7 @@ main{max-height: 100%;display: grid;grid-template: minmax(4.25rem,5rem) minmax(8
 .scroll-spy-navbar{min-width: 17.25rem;box-shadow: 1px 0 0 #e0e0e0}
 .nav-pills .nav-link{color: var(--primary-text);font-weight: 600}
 .nav-pills .nav-link.active{background-color: #d5e3f6;color: var(--primary-text);border-radius: 0;border-inline-end: 0.25rem solid var(--primary);transition: all .2s linear}
-.snap-item{ scroll-snap-align: start; padding-bottom: 3rem; min-height: 105%; }
+.snap-item{ scroll-snap-align: start; padding-bottom: 3rem; }
 .snap-item h4 { position: sticky; top: -1rem; padding: 0.75rem 1.25rem; background-color: #fff; box-shadow: 0 1px 8px #ccc; z-index: 99; }
 .ss-mandatory{ scroll-snap-type: y mandatory; }
 .ss-proximity{ scroll-snap-type: y proximity; }
