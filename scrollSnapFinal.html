@@ -26,21 +26,30 @@
           <h2 class="page-title m-0 text-center">Theodore Reynolds</h2>
           <div class="row no-gutters mt-4 flex-nowrap justify-content-center">
             <div id="navbar-example" class="scroll-spy-navbar">
-              <nav class="nav nav-pills flex-column">
+              <nav class="nav nav-pills flex-column" aria-label="Primary Navigation">
+                <a class="nav-link" href="javascript:;" data-parent>Documents</a>
+                <nav class="nav nav-pills flex-column" aria-label="Inner Navigation">
+                  <a class="nav-link" href="#biograpicInfo">BioGraphic Info</a>
+                  <a class="nav-link" href="#basicInfo">Basic Info</a>
+                </nav>
                 <a class="nav-link" href="#irisInfo">IRIS</a>
-                <a class="nav-link" href="#documentsInfo">Documents</a>
-                <a class="nav-link" href="#biograpicInfo">BioGraphic Info</a>
-                <a class="nav-link" href="#basicInfo">Basic Info</a>
+                <a class="nav-link" href="#biograpicPrimaryInfo">BioGraphic Info</a>
+                <a class="nav-link" href="#basicPrimaryInfo">Basic Info</a>
               </nav>
             </div>
             <div class="scroll-spy ml-5 px-5 py-3 ss-proximity" data-spy="scroll" data-target="#navbar-example"
                  data-offset="0">
-              <div class="snap-item" id="irisInfo">
-                <h4>IRIS</h4>
-                <img src="styles/iris.svg" alt="Iris Image" class="img-fluid w-100">
+              <div class="snap-item" id="biograpicInfo">
+                <h4>Biographic Info</h4>
+                <div class="row no-gutters px-5">
+                  <img src="styles/biographic-group.svg" alt="biographic Info" class="img-fluid w-auto">
+                </div>
+                <div class="row no-gutters px-5">
+                  <img src="styles/biographic-group.svg" alt="biographic Info" class="img-fluid w-auto">
+                </div>
               </div>
-              <div class="snap-item" id="documentsInfo">
-                <h4>Documents Info</h4>
+              <div class="snap-item" id="basicInfo">
+                <h4>Basic Info</h4>
                 <form class="form-outline px-5">
                   <div class="form-row no-gutters mb-3">
                     <div class="form-group col">
@@ -62,9 +71,73 @@
                       <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact number">
                     </div>
                   </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userCountry">Country:</label>
+                      <input type="text" class="form-control" id="userCountry" placeholder="Enter User Country">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userCity">City:</label>
+                      <input type="text" class="form-control" id="userCity" placeholder="Enter User City">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="addressLine1">Address Line1:</label>
+                      <input type="text" class="form-control" id="addressLine1" placeholder="Enter address Line1">
+                    </div>
+                    <div class="form-group col">
+                      <label for="addressLine2">Address Line2:</label>
+                      <input type="text" class="form-control" id="addressLine2" placeholder="Enter address Line2">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userVin">VIN:</label>
+                      <input type="text" class="form-control" id="userVin" placeholder="Enter User VIN">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userZip">Zipcode:</label>
+                      <input type="text" class="form-control" id="userZip" placeholder="Enter User Country">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userCountry">Country:</label>
+                      <input type="text" class="form-control" id="userCountry" placeholder="Enter User Country">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userCity">City:</label>
+                      <input type="text" class="form-control" id="userCity" placeholder="Enter User City">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters mb-3">
+                    <div class="form-group col">
+                      <label for="addressLine1">Address Line1:</label>
+                      <input type="text" class="form-control" id="addressLine1" placeholder="Enter address Line1">
+                    </div>
+                    <div class="form-group col">
+                      <label for="addressLine2">Address Line2:</label>
+                      <input type="text" class="form-control" id="addressLine2" placeholder="Enter address Line2">
+                    </div>
+                  </div>
+                  <div class="form-row no-gutters">
+                    <div class="form-group col">
+                      <label for="userVin">VIN:</label>
+                      <input type="text" class="form-control" id="userVin" placeholder="Enter User VIN">
+                    </div>
+                    <div class="form-group col">
+                      <label for="userZip">Zipcode:</label>
+                      <input type="text" class="form-control" id="userZip" placeholder="Enter User Country">
+                    </div>
+                  </div>
                 </form>
               </div>
-              <div class="snap-item" id="biograpicInfo">
+              <div class="snap-item" id="irisInfo">
+                <h4>IRIS</h4>
+                <img src="styles/iris.svg" alt="Iris Image" class="img-fluid w-100">
+              </div>
+              <div class="snap-item" id="biograpicPrimaryInfo">
                 <h4>Biographic Info</h4>
                 <div class="row no-gutters px-5">
                   <img src="styles/biographic-group.svg" alt="biographic Info" class="img-fluid w-auto">
@@ -73,7 +146,7 @@
                   <img src="styles/biographic-group.svg" alt="biographic Info" class="img-fluid w-auto">
                 </div>
               </div>
-              <div class="snap-item" id="basicInfo">
+              <div class="snap-item" id="basicPrimaryInfo">
                 <h4>Basic Info</h4>
                 <form class="form-outline px-5">
                   <div class="form-row no-gutters mb-3">
